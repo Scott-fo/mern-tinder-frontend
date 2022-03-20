@@ -1,0 +1,48 @@
+.auth-modal {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.close-icon {
+    float: right;
+    color: #fe3072;
+}
+
+.submit-button {
+    color: grey;
+    background-color: white;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: solid 2px grey;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.submit-button:hover {
+    color: white;
+    background-color: grey;
+    border: solid 2px white;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-input {
+    padding: 8px;
+    margin: 8px;
+    font-size: 17px;
+}

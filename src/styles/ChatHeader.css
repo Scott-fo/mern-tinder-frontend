@@ -1,0 +1,49 @@
+.chat-header {
+    background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
+    height: 100px;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile, .log-out {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.log-out {
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.log-out:hover {
+    transform: scale(1.5);
+}
+
+.img-container {
+    height: 3vw;
+    width: 3vw;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+}
+
+.username {
+    font-size: 2vw;
+}
+
+@media (min-width: 650px) {
+    .username {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,48 @@
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo-container {
+    margin: 15px;
+}
+
+.login-button {
+    visibility: hidden;
+}
+
+@media (min-width: 640px) {
+    .logo {
+        width: 170px;
+    }
+
+    .login-button {
+        visibility: visible;
+        background: white;
+        color: #fe3072;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 5px 25px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    
+    .login-button:hover {
+        background: #fe3072;
+        color: white;
+    }
+    
+    .login-button:disabled {
+        background: #fe3072;
+        color: white;
+    }
+}
+
+

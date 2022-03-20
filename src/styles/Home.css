@@ -1,0 +1,92 @@
+.overlay {
+    object-fit: fill;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%),
+    url("https://tinder.com/static/build/6e9794bcedeecf5a8f8f41338a2a7345.webp") no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+.primary-title {
+    font-size: 8vw;
+    color: white;
+}
+
+.home {
+    margin-top: 1px;
+}
+
+@media (min-height: 500px) {
+    .home {
+        margin-top: 30vh;
+    }
+}
+
+@media (min-height: 750px) and  (max-width: 640px){
+    .button-container {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .home {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .primary-button {
+        width: 70vw;
+        margin: 8px;
+        background: white;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 9999px;
+        font-weight: 500;
+        font-size: medium;
+    }
+    
+    .responsive-login {
+        width: 70vw;
+        background: none;
+        color: white;
+        border: 3px solid white;
+        margin-top: 15px;
+        margin-bottom: 150px;
+        padding: 15px 20px;
+        border-radius: 9999px;
+        font-weight: 500;
+        font-size: medium;
+    }
+
+    .primary-title {
+        font-style: italic;
+    }
+}
+
+@media (min-width: 640px) {
+    .primary-button {
+        color: #fff;
+        font-size: 15px;
+        background: linear-gradient(45deg, #fe3072, #ff5940);
+        padding: 20px 80px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .primary-button:hover {
+        background: linear-gradient(45deg, #ff5940, #fe3072);
+    }
+
+    .responsive-login {
+        display: none;
+    }
+}
+
+

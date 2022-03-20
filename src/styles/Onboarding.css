@@ -1,0 +1,114 @@
+.container {
+    border-top: solid 1px rgb(214, 214, 214);
+}
+
+.onboarding-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-sections {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 640px) {
+    .onboarding-form {
+        flex-direction: unset;
+        justify-content: center;
+    }
+
+    .form-sections {
+        width: 40%;
+    }
+}
+
+
+.form-sections label {
+    text-align: start;
+}
+
+.form-sections input {
+    padding: 15px 0;
+    margin: 10px 0;
+    font-size: 15px;
+    border: solid 2px rgb(219, 219, 219);
+    border-radius: 10px;
+}
+
+.form-sections input::-webkit-outer-spin-button,
+.form-sections input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-sections input:focus {
+    outline: none;
+    border: #fe3072 2px solid;
+}
+
+.form-sections input[type="submit"]:hover {
+    background-color: #fe3072;
+    border: none;
+    color: white;
+}
+
+.form-sections input[type="submit"]:active {
+    background-color: #fe3072;
+    border: none;
+    color: white;
+}
+
+.form-sections label {
+    margin: 10px 0;
+}
+
+.multiple-input {
+    display: flex;
+    flex-direction: row;
+}
+
+.multiple-input input {
+    margin-right: 10px;
+}
+
+.multiple-input input[type="radio"] {
+    display: none;
+}
+
+.multiple-input input[type="radio"]:checked + label {
+    background-color: #fe3072;
+    border: solid 2px #fe3072;
+    color: white;
+}
+
+.multiple-input input[type="radio"]:hover + label {
+    background-color: #fe3072;
+    border: solid 2px #fe3072;
+    color: white;
+}
+
+.multiple-input label {
+    padding: 10px;
+    border: solid 2px rgb(144, 144, 144);
+    border-radius: 10px;
+    transition: all 0.1s;
+    margin-right: 10px;
+}
+
+.birthday-section input {
+    width: 100%;
+}
+
+.profile-pic {
+    width: 100%;
+}
+
+.checkbox:hover {
+    cursor: pointer;
+    outline: none;
+    border: #fe3072 2px solid;
+}

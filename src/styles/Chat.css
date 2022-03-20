@@ -1,0 +1,51 @@
+.chat-window {
+    padding: 20px;
+    height: 60vh;
+    overflow-y: auto;
+}
+
+.message-container {
+    display: flex;
+}
+.chat-message-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-container {
+    height: 3vw;
+    width: 3vw;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+}
+
+.message-name {
+    text-align: left;
+    font-style: italic;
+    color: gray;
+    font-size: 2vw;
+    margin: 0;
+    
+}
+
+.message {
+    margin-left: 10px;
+    font-size: 2.5vw;
+}
+
+@media (min-width: 650px) {
+    .message-name {
+        font-size: 10px;
+    }
+
+    .message {
+        font-size: 17px;
+    }
+}

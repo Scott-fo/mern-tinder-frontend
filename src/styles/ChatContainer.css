@@ -1,0 +1,25 @@
+.chat-container {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 30%;
+    /* text-align: left; */
+    z-index: 1;
+}
+
+.option {
+    border: none;
+    background-color: white;
+    border-bottom: solid 4px #fe3072;
+    font-size: 20px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #fe3072;
+    color: white;
+}
+
+.option:disabled {
+    border-bottom: solid 4px rgb(187, 187, 187);
+}
