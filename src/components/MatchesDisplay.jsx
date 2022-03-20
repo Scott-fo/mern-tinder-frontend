@@ -13,7 +13,7 @@ const MatchesDisplay = ({ matches, setClickedUser }) => {
 
   const getMatches = async() => {
     try {
-      await axios.get("http://localhost:8000/matches", { params: { userIds: JSON.stringify(matchedUserIds)}}).then((response) => setMatchedProfiles(response.data));
+      await axios.get("https://scottfo-tinder.herokuapp.com/matches", { params: { userIds: JSON.stringify(matchedUserIds)}}).then((response) => setMatchedProfiles(response.data));
     } catch (err) {
       console.log(err)
     }

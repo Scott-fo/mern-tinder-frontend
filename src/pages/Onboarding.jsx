@@ -39,7 +39,7 @@ const Onboarding = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.put("http://localhost:8000/user", { formData });
+      const response = await axios.put("https://scottfo-tinder.herokuapp.com/user", { formData });
       if (response.status === 200) {
         navigate("/dashboard");
       }

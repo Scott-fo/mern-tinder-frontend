@@ -13,7 +13,7 @@ const ChatDisplay = ({ user, clickedUser }) => {
 
   const getUsersMessages = async () => {
     try {
-      await axios.get("http://localhost:8000/messages", { params: { userId: userId, correspondingUserId: clickedUserId}}).then((response) => setUsersMessages(response.data));
+      await axios.get("https://scottfo-tinder.herokuapp.com/messages", { params: { userId: userId, correspondingUserId: clickedUserId}}).then((response) => setUsersMessages(response.data));
     } catch (err) {
       console.log(err);
     }
@@ -21,7 +21,7 @@ const ChatDisplay = ({ user, clickedUser }) => {
 
   const getClickedUsersMessages = async () => {
     try {
-      await axios.get("http://localhost:8000/messages", { params: { userId: clickedUserId, correspondingUserId: userId}}).then((response) => setClickedUsersMessages(response.data));
+      await axios.get("https://scottfo-tinder.herokuapp.com/messages", { params: { userId: clickedUserId, correspondingUserId: userId}}).then((response) => setClickedUsersMessages(response.data));
     } catch (err) {
       console.log(err);
     }

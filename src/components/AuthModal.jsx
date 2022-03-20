@@ -27,7 +27,7 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
               return;
           } else {
             //   console.log(email)
-              const response = await axios.post(`http://localhost:8000/${isSignUp ? "signup" : "login"}`, { email, password });
+              const response = await axios.post(`https://scottfo-tinder.herokuapp.com/${isSignUp ? "signup" : "login"}`, { email, password });
 
               setCookie("UserId", response.data.userId);
               setCookie("AuthToken", response.data.token);

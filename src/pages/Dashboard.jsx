@@ -15,7 +15,7 @@ const Dashboard = () => {
 
   const getUser = async () => {
     try {
-      await axios.get("http://localhost:8000/user", { params: { userId }}).then((response) => setUser(response.data));
+      await axios.get("https://scottfo-tinder.herokuapp.com/user", { params: { userId }}).then((response) => setUser(response.data));
     } catch (error) {
       console.log(error);
     }
@@ -23,7 +23,7 @@ const Dashboard = () => {
 
   const getUserByGender = async () => {
     try {
-      await axios.get("http://localhost:8000/gendered-users", { params: { gender : user?.gender_interest }}).then((response) => setUserByGender(response.data));
+      await axios.get("https://scottfo-tinder.herokuapp.com/gendered-users", { params: { gender : user?.gender_interest }}).then((response) => setUserByGender(response.data));
     } catch (err) {
       console.log(err);
     }
@@ -37,7 +37,7 @@ const Dashboard = () => {
 
   const updateMatches = async (matchedUserId) => {
     try {
-      await axios.put("http://localhost:8000/addmatch", { userId, matchedUserId });
+      await axios.put("https://scottfo-tinder.herokuapp.com/addmatch", { userId, matchedUserId });
       getUser();
     } catch (err) {
       console.log(err);
