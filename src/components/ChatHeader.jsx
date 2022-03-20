@@ -11,7 +11,6 @@ const ChatHeader = ({ user }) => {
   const logout = () => {
     removeCookie("UserId", cookie.UserId);
     removeCookie("AuthToken", cookie.AuthToken);
-    window.location.reload();
     navigate("/");
   }
 
